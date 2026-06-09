@@ -29,7 +29,7 @@ export default function HeroSection({ content }: { content: HeroContent }) {
         }}
       />
 
-      <div className="relative z-10 container mx-auto px-6 lg:px-16 py-24 grid lg:grid-cols-2 gap-16 items-center">
+      <div className="relative z-10 container mx-auto px-6 lg:px-16 pt-12 pb-24 lg:py-24 grid lg:grid-cols-2 gap-16 items-center">
         {/* Text side — each element fades up on mount with staggered delays */}
         <div className="order-2 lg:order-1 flex flex-col gap-8">
           <div>
@@ -95,7 +95,7 @@ export default function HeroSection({ content }: { content: HeroContent }) {
       {/* Wave — 12px wider on each side so translateX doesn't expose gaps */}
       <div
         ref={waveRef}
-        className="absolute bottom-0 left-0 right-0 overflow-hidden leading-none"
+        className="absolute bottom-0 left-0 right-0 overflow-hidden leading-none bg-background"
       >
         <svg
           viewBox="0 0 1440 120"
