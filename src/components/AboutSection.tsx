@@ -18,7 +18,7 @@ export default function AboutSection({ content }: { content: AboutContent }) {
   const ctaHref = `mailto:${cta.email}?subject=${encodeURIComponent(cta.subject)}`;
 
   return (
-    <section className="relative py-32 overflow-hidden bg-background">
+    <section className="relative py-16 overflow-hidden bg-background">
       {/* Decorative glow */}
       <div
         className="absolute top-0 right-0 w-1/2 h-full opacity-15 pointer-events-none"
@@ -27,13 +27,16 @@ export default function AboutSection({ content }: { content: AboutContent }) {
         }}
       />
 
-      <div ref={contentRef} className="relative z-10 container mx-auto px-6 lg:px-16">
+      <div
+        ref={contentRef}
+        className="relative z-10 container mx-auto px-6 lg:px-16"
+      >
         <div className="max-w-3xl mx-auto">
           {/* Decorative leaf */}
           <div
             className={cn(
               "flex items-center gap-4 mb-12",
-              !inView ? "opacity-0" : "animate-fade-in [animation-delay:0ms]"
+              !inView ? "opacity-0" : "animate-fade-in [animation-delay:0ms]",
             )}
           >
             <div className="w-12 h-px bg-primary" />
@@ -43,7 +46,13 @@ export default function AboutSection({ content }: { content: AboutContent }) {
                 opacity="0.7"
                 d="M12 2C8 2 4 6 4 12C4 16 7 19.5 12 22C17 19.5 20 16 20 12C20 6 16 2 12 2Z"
               />
-              <path className="stroke-primary" opacity="0.6" d="M12 2L12 22" strokeWidth="0.5" fill="none" />
+              <path
+                className="stroke-primary"
+                opacity="0.6"
+                d="M12 2L12 22"
+                strokeWidth="0.5"
+                fill="none"
+              />
             </svg>
             <div className="w-12 h-px bg-primary" />
           </div>
@@ -54,7 +63,9 @@ export default function AboutSection({ content }: { content: AboutContent }) {
                 key={i}
                 className={cn(
                   variantClass[para.variant],
-                  !inView ? "opacity-0" : `animate-fade-up [animation-delay:${DELAYS[i] ?? i * 180}ms]`
+                  !inView
+                    ? "opacity-0"
+                    : `animate-fade-up [animation-delay:${DELAYS[i] ?? i * 180}ms]`,
                 )}
               >
                 {para.text}
@@ -65,11 +76,14 @@ export default function AboutSection({ content }: { content: AboutContent }) {
           <div
             className={cn(
               "mt-12",
-              !inView ? "opacity-0" : "animate-fade-up [animation-delay:820ms]"
+              !inView ? "opacity-0" : "animate-fade-up [animation-delay:820ms]",
             )}
           >
             <a href={ctaHref}>
-              <Button size="lg" className="text-base px-8 py-6 rounded-full font-light bg-hero text-hero-foreground hover:bg-hero/90 transition-all duration-300 hover:scale-105">
+              <Button
+                size="lg"
+                className="text-base px-8 py-6 rounded-full font-light bg-hero text-hero-foreground hover:bg-hero/90 transition-all duration-300 hover:scale-105"
+              >
                 {cta.text}
               </Button>
             </a>

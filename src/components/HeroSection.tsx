@@ -39,9 +39,7 @@ export default function HeroSection({ content }: { content: HeroContent }) {
             <h1 className="text-5xl lg:text-6xl xl:text-7xl font-light leading-tight text-hero-foreground font-serif animate-fade-up [animation-delay:300ms]">
               {headingLine1}
               <br />
-              <em className="not-italic font-normal text-ring">
-                {headingLine2}
-              </em>
+              <em className="italic font-normal text-ring">{headingLine2}</em>
               <br />
               {headingLine3}
               <br />
