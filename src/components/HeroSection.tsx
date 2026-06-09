@@ -51,7 +51,7 @@ export default function HeroSection({ content }: { content: HeroContent }) {
             {subtitle}
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 animate-fade-up [animation-delay:700ms]">
+          <div className="flex flex-col sm:flex-row gap-4 animate-fade-in [animation-delay:1200ms]">
             <a href={ctaHref}>
               <Button
                 size="lg"
@@ -73,7 +73,7 @@ export default function HeroSection({ content }: { content: HeroContent }) {
               }}
             />
             <div
-              className="relative w-72 h-72 lg:w-96 lg:h-96 rounded-full overflow-hidden"
+              className="relative w-54 h-54 lg:w-96 lg:h-96 rounded-full overflow-hidden"
               style={{
                 boxShadow: `0 32px 64px oklch(0 0 0 / 0.4), 0 0 0 3px color-mix(in oklch, var(--color-primary) 60%, transparent)`,
               }}
