@@ -1,7 +1,5 @@
 ---
 badge: "Client Stories"
-sectionTitle: "Lives in motion."
-carouselTitle: "Words from clients"
 videos:
   - name: "Sarah M."
     title: "Marketing Director"

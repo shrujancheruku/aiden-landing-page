@@ -27,7 +27,7 @@ const about = defineCollection({
       z.object({
         variant: z.enum(["body", "emphasis", "italic"]),
         text: z.string(),
-      })
+      }),
     ),
     cta: ctaSchema,
   }),
@@ -37,21 +37,19 @@ const testimonials = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/testimonials" }),
   schema: z.object({
     badge: z.string(),
-    sectionTitle: z.string(),
-    carouselTitle: z.string(),
     videos: z.array(
       z.object({
         name: z.string(),
         title: z.string(),
         quote: z.string(),
-      })
+      }),
     ),
     reviews: z.array(
       z.object({
         name: z.string(),
         role: z.string(),
         review: z.string(),
-      })
+      }),
     ),
   }),
 });
