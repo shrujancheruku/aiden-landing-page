@@ -5,7 +5,15 @@ import type { HeroContent } from "@/types/content";
 
 export default function HeroSection({ content }: { content: HeroContent }) {
   const [waveRef, waveInView] = useInView<HTMLDivElement>(0.8);
-  const { label, headingLine1, headingLine2, headingLine3, headingLine4, subtitle, cta } = content;
+  const {
+    label,
+    headingLine1,
+    headingLine2,
+    headingLine3,
+    headingLine4,
+    subtitle,
+    cta,
+  } = content;
   const ctaHref = `mailto:${cta.email}?subject=${encodeURIComponent(cta.subject)}`;
 
   return (
@@ -31,7 +39,9 @@ export default function HeroSection({ content }: { content: HeroContent }) {
             <h1 className="text-5xl lg:text-6xl xl:text-7xl font-light leading-tight text-hero-foreground font-serif animate-fade-up [animation-delay:300ms]">
               {headingLine1}
               <br />
-              <em className="not-italic font-normal text-ring">{headingLine2}</em>
+              <em className="not-italic font-normal text-ring">
+                {headingLine2}
+              </em>
               <br />
               {headingLine3}
               <br />
@@ -71,7 +81,7 @@ export default function HeroSection({ content }: { content: HeroContent }) {
               }}
             >
               <img
-                src={`${import.meta.env.BASE_URL}profile-photo.jpg`}
+                src={`${import.meta.env.BASE_URL}/profile-photo.jpg`}
                 alt="Aidan Belizaire"
                 className="w-full h-full object-cover"
                 onError={(e) => {
