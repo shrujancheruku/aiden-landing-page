@@ -95,7 +95,7 @@ export default function HeroSection({ content }: { content: HeroContent }) {
       {/* Wave — 12px wider on each side so translateX doesn't expose gaps */}
       <div
         ref={waveRef}
-        className="absolute bottom-0 left-0 right-0 overflow-hidden leading-none bg-background"
+        className="absolute bottom-0 left-0 right-0 overflow-hidden leading-none"
       >
         <svg
           viewBox="0 0 1440 120"
@@ -107,6 +107,7 @@ export default function HeroSection({ content }: { content: HeroContent }) {
             display: "block",
             width: "calc(100% + 44px)",
             marginLeft: "-22px",
+            animationDelay: "1800ms",
           }}
         >
           <path

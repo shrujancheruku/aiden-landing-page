@@ -94,7 +94,7 @@ export default function AboutSection({ content }: { content: AboutContent }) {
       {/* Wave */}
       <div
         ref={waveRef}
-        className="absolute bottom-0 left-0 right-0 overflow-hidden leading-none bg-card"
+        className="absolute bottom-0 left-0 right-0 overflow-hidden leading-none"
       >
         <svg
           viewBox="0 0 1440 120"
