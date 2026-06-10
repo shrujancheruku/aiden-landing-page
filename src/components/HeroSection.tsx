@@ -112,7 +112,7 @@ export default function HeroSection({ content }: { content: HeroContent }) {
         >
           <path
             className="fill-background"
-            d="M0,60 C240,120 480,0 720,60 C960,120 1200,0 1440,60 L1440,120 L0,120 Z"
+            d="M0,60 C90,120 180,0 360,60 C450,120 540,0 720,60 C810,120 900,0 1080,60 C1170,120 1260,0 1440,60 L1440,120 L0,120 Z"
           />
         </svg>
       </div>

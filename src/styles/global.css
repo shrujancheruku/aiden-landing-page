@@ -227,8 +227,8 @@
 }
 
 /*
-  Three decaying horizontal pulses — wave returns to 0 between each beat
-  so each pulse is distinct. Amplitudes: 16px → 9px → 4px.
+  Three decaying horizontal pulses — wave returns to 0 between each beat.
+  Amplitudes: 16px → 9px → 4px, alternating direction.
 */
 @keyframes wave-ripple {
   0%   { transform: translateX(0px);   }
