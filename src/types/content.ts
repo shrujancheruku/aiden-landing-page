@@ -36,10 +36,16 @@ export interface ClientReview {
   review: string;
 }
 
+export interface TestimonialsCta {
+  headline: string;
+  text: string;
+  email: string;
+  subject: string;
+}
+
 export interface TestimonialsContent {
   badge: string;
-  sectionTitle: string;
-  carouselTitle: string;
   videos: TestimonialVideo[];
   reviews: ClientReview[];
+  cta: TestimonialsCta;
 }

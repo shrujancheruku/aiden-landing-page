@@ -17,7 +17,7 @@ export default function HeroSection({ content }: { content: HeroContent }) {
   const ctaHref = `mailto:${cta.email}?subject=${encodeURIComponent(cta.subject)}`;
 
   return (
-    <section className="relative min-h-[85vh] lg:min-h-screen flex items-center overflow-hidden bg-hero">
+    <section className="relative lg:min-h-screen flex items-center overflow-hidden bg-hero">
       {/* Decorative glows */}
       <div
         className="absolute inset-0 opacity-15 pointer-events-none"

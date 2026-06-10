@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { useInView } from "@/hooks/useInView";
 import { cn } from "@/lib/utils";
 import type { TestimonialsContent } from "@/types/content";
@@ -63,7 +64,9 @@ export default function TestimonialsSection({
   const [headingRef, headingInView] = useInView<HTMLDivElement>(0.3);
   const [videosRef, videosInView] = useInView<HTMLDivElement>(0.1);
   const [carouselRef, carouselInView] = useInView<HTMLDivElement>(0.1);
-  const { badge, sectionTitle, carouselTitle, videos, reviews } = content;
+  const [ctaRef, ctaInView] = useInView<HTMLDivElement>(0.3);
+  const { badge, videos, reviews, cta } = content;
+  const ctaHref = `mailto:${cta.email}?subject=${encodeURIComponent(cta.subject)}`;
 
   return (
     <section className="relative pt-6 pb-16 lg:pt-12 lg:pb-32 overflow-hidden bg-card">
@@ -178,6 +181,27 @@ export default function TestimonialsSection({
               </div>
             </Carousel>
           </div>
+        </div>
+      </div>
+
+      {/* Bottom CTA */}
+      <div
+        ref={ctaRef}
+        className="relative z-10 container mx-auto px-6 lg:px-16 mt-16 lg:mt-24 text-center"
+      >
+        <div
+          className={cn(
+            !ctaInView ? "opacity-0" : "animate-fade-in [animation-delay:0ms]",
+          )}
+        >
+          <a href={ctaHref}>
+            <Button
+              size="lg"
+              className="text-base px-8 py-6 rounded-full font-light transition-all duration-300 hover:scale-105"
+            >
+              {cta.text}
+            </Button>
+          </a>
         </div>
       </div>
 

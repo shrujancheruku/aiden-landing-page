@@ -26,4 +26,9 @@ reviews:
   - name: "Natalie W."
     role: "Nurse Practitioner"
     review: "I came to Aidan feeling burnt out and disconnected. Now I feel reconnected to what actually matters to me."
+cta:
+  headline: "Ready to figure it out?"
+  text: "Book a Free Call"
+  email: "hello@aidanbelizaire.com"
+  subject: "Tell me more about coaching"
 ---

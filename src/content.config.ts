@@ -51,6 +51,12 @@ const testimonials = defineCollection({
         review: z.string(),
       }),
     ),
+    cta: z.object({
+      headline: z.string(),
+      text: z.string(),
+      email: z.string().email(),
+      subject: z.string(),
+    }),
   }),
 });
 
