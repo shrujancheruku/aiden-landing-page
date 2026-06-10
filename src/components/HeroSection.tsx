@@ -33,10 +33,10 @@ export default function HeroSection({ content }: { content: HeroContent }) {
         {/* Text side — each element fades up on mount with staggered delays */}
         <div className="order-2 lg:order-1 flex flex-col gap-5 lg:gap-8">
           <div>
-            <p className="uppercase tracking-widest text-sm mb-3 lg:mb-6 font-light text-ring animate-fade-up [animation-delay:100ms]">
+            <p className="uppercase tracking-widest text-sm mb-6 font-light text-ring animate-fade-up [animation-delay:100ms]">
               {label}
             </p>
-            <h1 className="text-4xl lg:text-6xl xl:text-7xl font-light leading-tight text-hero-foreground font-serif animate-fade-up [animation-delay:300ms]">
+            <h1 className="text-5xl lg:text-6xl xl:text-7xl font-light leading-tight text-hero-foreground font-serif animate-fade-up [animation-delay:300ms]">
               {headingLine1}
               <br />
               <em className="italic font-normal text-ring">{headingLine2}</em>
