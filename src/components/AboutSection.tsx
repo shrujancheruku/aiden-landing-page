@@ -110,7 +110,7 @@ export default function AboutSection({ content }: { content: AboutContent }) {
         >
           <path
             className="fill-card"
-            d="M0,50 C100,110 200,5 360,55 C480,115 600,5 720,60 C840,115 960,5 1080,58 C1200,115 1330,10 1440,50 L1440,120 L0,120 Z"
+            d="M0,40 C180,100 360,0 540,60 C720,120 900,10 1080,70 C1260,120 1350,30 1440,50 L1440,120 L0,120 Z"
           />
         </svg>
       </div>
