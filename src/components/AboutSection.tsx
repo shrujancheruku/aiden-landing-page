@@ -35,7 +35,7 @@ export default function AboutSection({ content }: { content: AboutContent }) {
           {/* Decorative leaf */}
           <div
             className={cn(
-              "flex items-center gap-4 mb-6 lg:mb-12",
+              "flex items-center justify-center gap-4 mb-6 lg:mb-12",
               !inView ? "opacity-0" : "animate-fade-in [animation-delay:0ms]",
             )}
           >
