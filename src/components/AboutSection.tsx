@@ -18,7 +18,7 @@ export default function AboutSection({ content }: { content: AboutContent }) {
   const ctaHref = `mailto:${cta.email}?subject=${encodeURIComponent(cta.subject)}`;
 
   return (
-    <section className="relative pb-16 lg:pb-32 overflow-hidden bg-background -mt-px">
+    <section className="relative pb-32 overflow-hidden bg-background -mt-px">
       {/* Decorative glow */}
       <div
         className="absolute top-0 right-0 w-1/2 h-full opacity-15 pointer-events-none"
